@@ -3,18 +3,13 @@ body {
     color: #626262;
     font-size: 14px;
     line-height: 24px;
+    box-sizing: border-box;
 }
 
 .main-menu {
     margin: 77px 314px 103px 313px;
     text-align: center;
-
-}
-
-
-.main-menu li {
-    display: inline-block;
-    margin-right: 121px;
+    width: 816px;
 
 }
 
@@ -25,8 +20,16 @@ body {
 
 }
 
+.main-menu li {
+    display: inline-block;
+    margin-right: 121px;
+
+}
+
 .main-content {
-    margin: 0px 150px;
+    width: 1200px;
+    margin-left: 150px;
+    
 }
 
 .box1,
@@ -34,7 +37,6 @@ body {
     display: inline-block;
     width: 420px;
     margin-bottom: 130px;
-
 }
 
 .box1 {
