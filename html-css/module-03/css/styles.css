@@ -15,7 +15,6 @@ body {
 .main-menu li {
     display: inline-block;
     margin-right: 121px;
-    /* Растояние между li */
 
 }
 
@@ -35,15 +34,12 @@ body {
     display: inline-block;
     width: 420px;
     margin-bottom: 130px;
-    /* Сделали нижнее  растояние между блоками */
 
 }
 
 .box1 {
     margin-left: 150px;
     overflow: hidden;
-    /* Свойство overflow управляет отображением содержания блочного элемента, если оно целиком не помещается и выходит за область заданных размеров. */
-}
 
 .box2 {
     margin-left: 60px;
@@ -68,8 +64,6 @@ body {
     margin-bottom: 70px;
     border: 1px solid black;
     box-sizing: border-box;
-    /* box-sizing: border-box - подстраивает содержимое контента под заданые размеры, в нашем случаие     width: 164px;
-    height: 60px;*/
 
 
 }
