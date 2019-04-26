@@ -1,0 +1,268 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* .container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 10px;
+} */
+
+/* HEADER */
+.page-header {
+  height: 542px;
+  margin-bottom: 70px;
+  background-image: url(../img/VectorSmart.png);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.page-nav {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  padding-top: 20px;
+}
+.site-nav {
+  padding: 44px 0 0;
+  margin-bottom: 90px;
+  text-align: center;
+}
+.but-nav {
+  width: 90px;
+  height: 36px;
+  background-color: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 255);
+  font-size: 14px;
+
+}
+.but-nav:hover {
+  border: 2px solid rgba(255, 255, 255, 255);
+  border-radius: 20px;
+}
+.site-logo {
+  margin: 0 auto;
+  padding: 50px 0 0;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 255);
+  margin-bottom: 30px;
+
+}
+
+.site-wrapper {
+  text-align: center;
+  color: rgba(255, 255, 255, 255);
+}
+
+.title {
+  display: block;
+  font-size: 25px;
+
+}
+.title-text {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.button-nav {
+  width: 280px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ff4e50;
+  color: rgba(255, 255, 255, 255);
+}
+
+/* MAIN */
+.main-contant {
+  margin-bottom: 60px;
+}
+
+/* TEAM SECTION */
+
+.team-title {
+  text-align: center;
+}
+
+.future-list {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.team-wrraper {
+  width: 200px;
+  margin: 0 auto;
+  
+}
+
+.team-box1, .team-box2, .team-box3, .team-box4 {
+  position: relative;
+  max-width: 122px;
+  height: 122px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.team-box1 {
+  background-image: url(../img/Layer1.png);
+}
+.team-box2 {
+  background-image: url(../img/Layer2.png);
+}
+.team-box3 {
+  background-image: url(../img/Layer3.png);
+}
+.team-box4 {
+  background-image: url(../img/Layer4.png);
+}
+
+
+.icon-wrrper1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 33px;
+  height: 33px;
+  background-color: #ff4e50;
+  background-repeat: no-repeat;
+  padding-top: 3px;
+  border: 4px solid rgba(255, 255, 255, 255);
+  border-radius: 50%;
+}
+.icon-wrrper2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 33px;
+  height: 33px;
+  background-color: #ffa507;
+  background-repeat: no-repeat;
+  padding: 3px 6px;
+  border: 4px solid rgba(255, 255, 255, 255);
+  border-radius: 50%;
+}
+.icon-wrrper3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 33px;
+  height: 33px;
+  background-color: #1cd7ad;
+  background-repeat: no-repeat;
+  padding-top: 2px;
+  border: 4px solid rgba(255, 255, 255, 255);
+  border-radius: 50%;
+}
+
+.icon-wrrper4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 33px;
+  height: 33px;
+  background-color: #4e73db;
+  background-repeat: no-repeat;
+  padding-top: 4px;
+  border: 4px solid rgba(255, 255, 255, 255);
+  border-radius: 50%;
+  
+}
+
+.icon1, .icon2, .icon3, .icon4 {
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin: 0 auto; 
+}
+.icon1 {
+  background-image: url(../img/icon/tv.png);
+  background-position: center;
+}
+.icon2 {
+  background-image: url(../img/icon/botle.png);
+}
+.icon3 {
+  background-image: url(../img/icon/coffe.png);
+  background-position: center;
+}
+.icon4 {
+  background-image: url(../img/icon/telegram.png);
+  background-position: center;
+}
+.text-wrraper {
+  text-align: center;
+}
+.name-team {
+  font-size: 14px;
+}
+.text-team {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(102, 102, 102, 255);
+}
+
+/* BUTTOM */
+.buttom-box {
+  margin: 0 auto;
+}
+.button-partners {
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #ff5254;
+  color: #ff5254;
+  background-color: transparent;
+
+}
+
+@media (max-width: 575px){
+  .team-cards [class*="col-"] {
+    margin-bottom: 28px;
+
+  }
+
+}
+@media (min-width: 576px) {
+  .team-cards [class*="col-"] {
+    margin-bottom: 40px;
+
+  }
+
+}
+
+@media (min-width: 768px) {
+  .site-nav {
+    order: 1;
+  }
+ .button-nav, .button-partners {
+   max-width: 230px;
+ }
+
+}

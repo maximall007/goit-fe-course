@@ -1,0 +1,334 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* ---------Header--------- */
+.wrraper {
+  min-height: 1000px;
+  background-position: center;
+  background-size: cover;
+  /* background-image: url(../img/Layer\ 15@1x.png); */
+  background: linear-gradient(to top, rgba(252, 227, 138, 0.81), rgba(243, 129, 129, 0.81)), url(../img/Layer\ 15@1x.png);
+  margin-bottom: 34px;
+}
+.header-content {
+  margin-bottom: 164px;
+}
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 634px;
+  list-style: none;
+ 
+}
+.site-navigation a:hover,
+.site-navigation svg:hover {
+  color: #fce38a;
+  fill: #fce38a;
+}
+
+.site-navigation a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: background-color 200ms linear;
+}
+.site-navigation a::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  display: block;
+  margin: auto;
+  background-color: transparent;
+  transition: background-color 200ms linear;
+}
+.site-navigation a:hover::after {
+background-color: #fce38a;
+}
+
+.site-navigation svg {
+  width: 18px;
+  height: 18px; 
+  fill: #ffffff;
+}
+
+.wrraper-box {
+  margin: 0 auto;
+  text-align: center;
+  width: 820px;
+}
+.wrraper-box__paragpaph {
+  font-family: 'Kaushan Script';
+  font-size: 72px;
+  color: #ffffff;
+}
+.wrraper-box__title {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 150px;
+  line-height: 140px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.wrraper-box__btn {
+  width: 162px;
+  height: 44px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/*-------- MAIN CONTANT-------- */
+
+/* -------SERVICES SECTION------- */
+.text-box {
+  text-align: center;
+  padding-bottom: 110px;
+}
+.text-box::after {
+  width: 60px;
+  height: 3px;
+  margin: auto;
+  display: block;
+  background-color: #f38181;
+  content: '';
+
+}
+
+.text-box__title {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+    font-weight: 400;
+  font-size: 24px;
+}
+.text-box__paragraph {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+}
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 380px;
+  padding-bottom: 100px;
+  
+
+  
+}
+.list-item svg {
+  width: 45px;
+  height: 45px;
+  padding-top: 15px;
+  fill: #95e1d3;
+}
+.text-item {
+  padding-left: 30px;
+}
+.text-item h3 {
+  font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+
+}
+.text-item p {
+  color: #c3c3c3
+}
+
+/* -------TEAM SECTION------- */
+.team-section {
+  margin-bottom: 80px;
+}
+.team-section__paragraph {
+  width: 954px;
+  margin: 0 auto 90px;
+  text-align: center;
+  color: #b6b6b6;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+}
+.team-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.team-item:not(:last-child) {
+  padding-right: 30px;
+}
+.team-card {
+  width: 380px;
+}
+.team-card__content {
+  position: relative;
+  transition: transform 0.2s linear;
+}
+.team-card__content::after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: '';
+  background-image: linear-gradient( to top, rgba(252, 227, 138, 0.81) 0%, rgba(243, 129, 129, 0.81) 100%);
+  transition: opacity 0.2s linear;
+}
+.team-card:hover .team-card__content {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px #95e1d3;
+}
+.team-card:hover .team-card__content::after {
+  opacity: 1;
+}
+
+.team-card__content:hover .team-card__icons {
+  opacity: 1;
+}
+
+
+.team-card__icons {
+  display: flex;
+  flex-basis: 226px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: opacity 0.2s linear;
+}
+
+
+.team-card__icon {
+  display: inline-block;
+  margin-right: 1px;
+  width: 56px;
+  height: 56px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fce38a;
+}
+.team-card__icon:hover {
+  background-color: #f38181;
+}
+.team-card__icons svg {
+  width: 26px;
+  height: 26px;
+  fill: #f38181;
+}
+.team-card__icon:hover>svg {
+  fill: #ffffff;
+}
+.team-card__name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+.team-card__profesion {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  color: #b6b6b6;
+  text-align: center;
+}
+
+/*------- FOOTER SECTION -------*/
+.page-footer::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: block;
+  margin: auto;
+  background-color: #e5e5e5;
+  margin-bottom: 10px;
+
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email {
+  width: 230px;
+  height: 40px;
+  padding-left: 12px;
+  border: 1px solid #e7e7e7;
+  color: ##d6d6d6;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+
+}
+
+.subscribe {
+  width: 150px;
+  height: 40px;
+  color: #ffffff;
+  margin-left: -6px;
+  border: none;
+  background-color: #95e1d3;
+}
+
+.text {
+  color: #f48b8b;
+}
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .wrraper {
+    background: linear-gradient(to top, rgba(252, 227, 138, 0.81), rgba(243, 129, 129, 0.81)), url(../img/Layer\ 15@2x.png);
+  }
+  
+}
+/* Чтение селлектора- Плотность обычного экрана 96dpi(точек на дюйм,на ретина экранах в 2-а раза больше (192dpi)
+(min-resolution: 2dppx) - точек в пикселях.
+ */
+
+
+
