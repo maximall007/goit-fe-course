@@ -1,0 +1,34 @@
+.wrraper-box {
+  margin: 0 auto;
+  text-align: center;
+  width: 820px;
+
+  &__paragpaph {
+    font-family: $secondary-fonts;
+    font-size: 72px;
+    color: $primary-white-color;
+
+  }
+
+  &__title {
+    font-family: $main-font-stack;
+    font-weight: 800;
+    font-size: 150px;
+    line-height: 140px;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+
+  &__btn {
+    width: 162px;
+    height: 44px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: 3px solid $primary-white-color;
+    color: $primary-white-color;
+    cursor: pointer;
+    overflow: hidden;
+
+  }
+}
+

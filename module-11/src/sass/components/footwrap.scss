@@ -1,0 +1,27 @@
+.footwrap {
+  @include flex-mixin ($pos:space-between);
+  align-items: center;
+
+  &-location__text {
+    color: $location-color;
+  }
+
+  &-contact__email {
+    width: 230px;
+    height: 40px;
+    padding-left: 12px;
+    border: 1px solid $text-color;
+    color: $text-color;
+    font-family: $next-fonts;
+    font-style: italic;
+  }
+
+  &-contact__subscribe {
+    width: 150px;
+    height: 40px;
+    color: $primary-white-color;
+    margin-left: -6px;
+    border: $none;
+    background-color: $text-color;
+  }
+}

@@ -1,0 +1,86 @@
+.team-card {
+  width: 380px;
+
+  &__content {
+    position: relative;
+    transition: transform 0.2s linear;
+
+    &::after {
+      @include pseudo;
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: $gradient;
+      transition: opacity 0.2s linear;
+
+    }
+  }
+
+  &:hover &__content {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px $services-color;
+  }
+
+  &:hover &__content::after {
+    opacity: 1;
+  }
+
+  &__icons {
+    display: flex;
+    flex-basis: 226px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: opacity 0.2s linear;
+
+    & svg {
+      width: 26px;
+      height: 26px;
+      fill: $psevdo-bg-color;
+    }
+  }
+
+  &__content:hover &__icons {
+    opacity: 1;
+  }
+
+  &__icon {
+    display: inline-block;
+    margin-right: 1px;
+    width: 56px;
+    height: 56px;
+    padding: 15px;
+    text-align: center;
+    background-color: $secondary-bg-color;
+
+    &:hover {
+      background-color: $psevdo-bg-color;
+    }
+
+    &:hover>svg {
+      fill: $primary-white-color;
+    }
+  }
+
+  &__name {
+    font-family: $main-font-stack;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__profesion {
+    font-family: $next-fonts;
+    font-style: italic;
+    font-weight: 300;
+    color: $text-color;
+    text-align: center;
+  }
+}

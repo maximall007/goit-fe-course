@@ -1,0 +1,10 @@
+.wrraper {
+  @include bg-image;
+  min-height: 1000px;
+  background: $gradient, url(../../images/Layer15@1x.png);
+  margin-bottom: 34px;
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background: $gradient, url(../../images/Layer15@2x.png);
+  }
+}

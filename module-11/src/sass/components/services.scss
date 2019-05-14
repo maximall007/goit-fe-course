@@ -1,0 +1,33 @@
+.services {
+  @include flex-mixin ($pos: space-between);
+  flex-wrap: wrap;
+  list-style: $none;
+
+  &-list {
+    @include flex-mixin ($pos: space-between);
+    flex-basis: 380px;
+    padding-bottom: 100px;
+
+    svg {
+      width: 45px;
+      height: 45px;
+      padding-top: 15px;
+      fill: $services-color;
+
+    }
+
+    &__item {
+      padding-left: 30px;
+
+      h3 {
+        font-family: $main-font-stack;
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      p {
+        color: $services-color;
+      }
+    }
+  }
+}

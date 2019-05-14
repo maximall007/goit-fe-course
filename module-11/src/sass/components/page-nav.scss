@@ -1,0 +1,6 @@
+.page-nav {
+  @include flex-mixin ($pos: space-between);
+  align-items: flex-start;
+  margin: 0;
+  padding-top: 30px;
+}

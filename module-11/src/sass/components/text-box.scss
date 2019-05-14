@@ -1,0 +1,27 @@
+.text-box {
+  text-align: center;
+  padding-bottom: 110px;
+
+  &::after {
+    @include pseudo;
+    width: 60px;
+    height: 3px;
+    margin: auto;
+    background-color: $psevdo-bg-color;
+
+  }
+
+  &__title {
+    font-family: $secondary-fonts;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  &__paragraph {
+    font-family: $main-font-stack;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+  }
+}

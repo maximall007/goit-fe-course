@@ -1,0 +1,12 @@
+.team-section {
+  margin-bottom: 80px;
+
+  &__paragraph {
+    margin: 0 auto 90px;
+    text-align: center;
+    color: $text-color;
+    font-family: $next-fonts;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
